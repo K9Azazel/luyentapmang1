@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let length = +prompt("Nhập vào độ dài mảng");
+    let array = new Array(length);
+    let max = 0
+    let sum = 0
+    let average = sum/array.length;
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt("Nhập vào phần tử thứ " + (i + 1));
+        if (max < array[i]) {
+            max = array[i]
+            sum = i + array[i]
+        }
+        }
+    console.log("giá trị lớn nhất  " + max + " giá trị trung bình  "+ average)
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length = +prompt("Nhập vào độ dài mảng");
+    let array = new Array(length);
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt("Nhập số nguyên " + (i + 1));
+    }
+    let i = 0 ;
+    let a = Number(prompt(' nhap so V'));
+    let count = 0;
+
+    while (i < array.length) {
+        if ( a === array[i]) {
+            count++ ;
+        }
+        i++;
+    }
+    if (count === 0){
+        alert('V is in not the array');
+    }
+    else alert(' V is in the array');
+</script>
+</body>
+</html>
